@@ -152,6 +152,8 @@ button {
     background-color: #19212b;
     color: #f3f3f4;
     cursor: pointer; 
+    -webkit-appearance: none; /* remove estilos default no iOS */
+    -webkit-text-size-adjust: 100%; /* evita zoom automático */
 }
 
 button:hover {
