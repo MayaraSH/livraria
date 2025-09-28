@@ -37,7 +37,6 @@ section {
 
 #produtos {
     padding-top: 48px;
-    padding-bottom: 64px;
 }
 
 header {
@@ -158,6 +157,10 @@ button {
 button:hover {
     background-color: #f3f3f4;
     color: #19212b;
+}
+
+footer {
+    padding: 240px;
 }
 
 @media screen and (max-width: 1024px) {
