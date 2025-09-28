@@ -37,6 +37,7 @@ section {
 
 #produtos {
     padding-top: 48px;
+    padding-bottom: 64px;
 }
 
 header {
@@ -114,7 +115,7 @@ section .sobre {
 
 .lista-livros {
     display: grid;
-    grid-template-columns: repeat(4, 24.5%);
+    grid-template-columns: repeat(4, 23.5%);
     column-gap: 2%; 
     row-gap: 5%;
     margin-top: 24px;
@@ -124,6 +125,8 @@ section .sobre {
     list-style: none;
     max-width: 80%; 
     margin-bottom: 24px;
+    width: 100%;    
+    justify-self: center;
 }
 
 .lista-livros li p {
@@ -191,10 +194,9 @@ button:hover {
 
     .lista-livros {
         display: grid;
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: repeat(2,48%);
         column-gap: 4%;
-        row-gap: 5%;
-        justify-content: center;
+        row-gap: 1%;
     }
 
     .lista-livros img {
