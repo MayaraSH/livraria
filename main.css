@@ -116,20 +116,23 @@ section .sobre {
     display: grid;
     grid-template-columns: repeat(4, 23.5%);
     column-gap: 2%; 
-    row-gap: 5%;
+    row-gap: 10%;
     margin-top: 24px;
 } 
 
 .lista-livros li {
     list-style: none;
     margin-bottom: 24px;
-    max-width: 80%;   
+    max-width: 100%;   
     margin-left: auto;
     margin-right: auto; 
+    display: flex;
+    flex-direction: column; /* se tiver imagem + título + botão */
+    align-items: center;
 }
 
 .lista-livros li p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .lista-livros img {
@@ -137,13 +140,14 @@ section .sobre {
 }
 
 .lista-livros li h3 {
-    margin: 16px 0;
+    margin: 16px 0px 0px; 
     height: 30px;
 }
 
 button {
     display: block; 
-    width: 100%;
+    max-width: 100%;   
+    width: 80%;
     margin: 12px 0;
     padding: 6px;
     font-size: 0.9em;
@@ -192,7 +196,7 @@ footer {
 
     #sobre img {
         margin: 0 auto 48px;
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .lista-livros {
@@ -204,10 +208,7 @@ footer {
 
     .lista-livros img {
         padding-top: 48px;
-    }
-
-    .lista-livros li p {
-    font-size: 1em;
+        max-width: 80%;
     }
 }
 
@@ -246,10 +247,6 @@ footer {
 
     .lista-livros li {
         max-width: 100%;
-    }
-
-    .lista-livros li p {
-        font-size: 1em;
     }
 
     .lista-livros img {
